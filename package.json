@@ -1,0 +1,24 @@
+{
+  "name": "stacker",
+  "version": "1.0.0",
+  "description": "Test Stacker game",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify src/index.js -o build/bundle.js",
+    "start": "budo src/index.js:build/bundle.js --port 2222 --open",
+    "clean": "rm build/bundle.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
+  "dependencies": {
+    "acorn": "^6.4.1",
+    "browserify": "^16.2.3",
+    "gsap": "^2.0.2",
+    "serve": "^10.1.2",
+    "three": "^0.99.0"
+  },
+  "devDependencies": {
+    "budo": "^11.6.2"
+  }
+}
